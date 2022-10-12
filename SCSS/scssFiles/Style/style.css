@@ -1,0 +1,1118 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+@font-face {
+  font-family: "mavenProBold";
+  src: url("../../../Fonts/mavenPro/mavenProBold.ttf");
+}
+@font-face {
+  font-family: "mavenProMedium";
+  src: url("../../../Fonts/mavenPro/mavenProMedium.ttf");
+}
+body {
+  overflow-x: hidden;
+}
+body a {
+  color: #ffffff;
+  font-size: 20px;
+}
+body h1 {
+  color: #dcdcdc;
+  font-family: mavenProBold;
+  font-size: 100px;
+  width: 55%;
+}
+body h3 {
+  color: #ffffff;
+  display: inline-block;
+  font-family: mavenProBold;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+body h4 {
+  display: inline;
+  font-family: mavenProBold;
+  font-size: 25px;
+  margin: 0;
+}
+body .mainContainer {
+  /*
+  TABLE OF CONTENTS
+  *****************
+  */
+}
+body .mainContainer section {
+  /*
+  TABLE OF CONTENTS
+  *****************
+  */
+  background: #1c1c1c;
+}
+body .mainContainer section .header {
+  background: url("../../../Images/Header/headerBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+}
+body .mainContainer section .header .headerBottom {
+  bottom: 85px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+body .mainContainer section .header .headerBottom .headerBottomArea {
+  display: flex;
+  justify-content: end;
+  width: 91%;
+}
+body .mainContainer section .header .headerBottom .headerBottomArea .yt {
+  height: auto;
+  position: relative;
+  width: 77px;
+}
+body .mainContainer section .header .headerMiddle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .mainContainer section .header .headerMiddle .content {
+  width: 85%;
+}
+body .mainContainer section .header .headerMiddle .content button {
+  background: #ff7373;
+  border: none;
+  border-radius: 25px;
+  height: 108px;
+  margin: 34px 0 0 0;
+  width: 261px;
+}
+body .mainContainer section .header .headerMiddle .content button a {
+  text-decoration: none;
+}
+body .mainContainer section .header .headerMiddle .content button a h4 {
+  color: #ffffff;
+}
+body .mainContainer section .header .headerMiddle .content button:hover {
+  background: #505050;
+}
+body .mainContainer section .header .headerMiddle .content button img {
+  bottom: 4px;
+  height: auto;
+  margin: 0 0 0 34px;
+  position: relative;
+  width: 20px;
+}
+body .mainContainer section .header .headerMiddle .content h3 {
+  color: #ff7373;
+}
+body .mainContainer section .header .headerTop {
+  height: 170px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 91%;
+}
+body .mainContainer section .header .headerTop .left {
+  position: relative;
+  width: 25%;
+  z-index: 2;
+}
+body .mainContainer section .header .headerTop .left a h3 {
+  display: inline-block;
+  font-size: 0px;
+  margin: 0;
+}
+body .mainContainer section .header .headerTop .left a h3 span {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+body .mainContainer section .header .headerTop .left a h3 .x {
+  color: #ff7373;
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+body .mainContainer section .header .headerTop .middle {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+body .mainContainer section .header .headerTop .middle .menuChocolate {
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+body .mainContainer section .header .headerTop .middle nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body .mainContainer section .header .headerTop .middle nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+body .mainContainer section .header .headerTop .middle nav ul li {
+  margin: 33px;
+  padding: 0;
+}
+body .mainContainer section .header .headerTop .middle nav ul li a {
+  display: inline-block;
+  font-family: mavenProBold;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body .mainContainer section .header .headerTop .middle nav ul li a:hover {
+  color: #ff7373;
+}
+body .mainContainer section .header .headerTop .right {
+  position: relative;
+  z-index: 2;
+  width: 25%;
+}
+body .mainContainer section .header .headerTop .right a img {
+  height: auto;
+  width: 50px;
+}
+body .mainContainer section .header .mobileMenu {
+  background: #2f2f2f;
+  height: 100%;
+  left: -100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+body .mainContainer section .header .mobileMenu .mobileContainer {
+  height: 100%;
+  width: 100%;
+}
+body .mainContainer section .header .mobileMenu .mobileContainer ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+body .mainContainer section .header .mobileMenu .mobileContainer ul li {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+body .mainContainer section .header .mobileMenu .mobileContainer ul li a {
+  color: #ffffff;
+  font-family: mavenProBold;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+body .mainContainer section .header .mobileMenu .mobileContainer ul li a:hover {
+  color: #ff7373;
+}
+body .mainContainer section .header .stickyMenu {
+  background: #2f2f2f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+body .mainContainer section .header .stickyMenu .headerTop {
+  height: 110px;
+}
+body .mainContainer section .changeMenu .mobileMenu {
+  left: 0;
+}
+body .mainContainer section .changeMenuScroll .headerTop .middle .menuChocolate .close {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+body .mainContainer section .changeMenuScroll .headerTop .middle .menuChocolate .open {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+@media (max-height: 400px) {
+  body .mainContainer section .header .headerMiddle .content button {
+    display: none;
+  }
+  body .mainContainer section .header .headerMiddle .content h1 {
+    display: none;
+  }
+  body .mainContainer section .header .headerMiddle .content h3 {
+    display: none;
+  }
+  body .mainContainer section .header .headerTop .left {
+    height: 50px;
+  }
+  body .mainContainer section .header .headerTop .right {
+    display: none !important;
+  }
+}
+@media (min-height: 401px) and (max-height: 475px) {
+  body .mainContainer section .header .headerMiddle .content h1 {
+    display: none;
+  }
+  body .mainContainer section .header .headerMiddle .content h3 {
+    display: none;
+  }
+  body .mainContainer section .header .headerTop .left {
+    height: 50px;
+  }
+  body .mainContainer section .header .headerTop .right {
+    display: none !important;
+  }
+}
+@media (min-height: 476px) and (max-height: 575px) {
+  body .mainContainer section .header .headerMiddle .content h1 {
+    display: none;
+  }
+  body .mainContainer section .header .headerMiddle .content h3 {
+    display: none;
+  }
+}
+@media (min-height: 576px) and (max-height: 800px) {
+  body .mainContainer section .header .headerMiddle .content h1 {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 25px;
+  }
+  body .mainContainer section .header .headerMiddle .content button {
+    height: 79px;
+    width: 190px;
+  }
+  body .mainContainer section .header .headerMiddle .content button a h4 {
+    font-size: 20px;
+  }
+  body .mainContainer section .header .headerMiddle .content h1 {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerMiddle .content h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  body .mainContainer section .header .headerTop {
+    margin: 0;
+    padding: 0;
+  }
+  body .mainContainer section .header .headerTop .left {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerTop .left h3 {
+    margin: 0;
+    padding: 25px 0 0 0;
+    text-align: center;
+  }
+  body .mainContainer section .header .headerTop .middle {
+    display: none !important;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerTop .right {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 25px;
+    width: 100%;
+  }
+}
+@media (min-width: 351px) and (max-width: 576px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 25px;
+  }
+  body .mainContainer section .header .headerMiddle .content h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerMiddle .content h3 {
+    text-align: center;
+  }
+  body .mainContainer section .header .headerTop {
+    margin: 0;
+    padding: 0;
+  }
+  body .mainContainer section .header .headerTop .left {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerTop .left h3 {
+    margin: 0;
+    padding: 25px 0 0 0;
+    text-align: center;
+  }
+  body .mainContainer section .header .headerTop .middle {
+    width: 100%;
+  }
+  body .mainContainer section .header .headerTop .right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 351px) and (max-width: 1200px) {
+  body .mainContainer section .header .headerTop .middle .menuChocolate {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 65px;
+  }
+  body .mainContainer section .header .headerTop .middle .menuChocolate .close {
+    color: #ffffff;
+  }
+  body .mainContainer section .header .headerTop .middle .menuChocolate i {
+    font-size: 50px;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+  }
+  body .mainContainer section .header .headerTop .middle .menuChocolate .open {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  body .mainContainer section .header .headerTop .middle .menuChocolate i.close {
+    opacity: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 769px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 25px;
+  }
+  body .mainContainer section .header .headerMiddle .content h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+  body .mainContainer section .header .headerTop .left {
+    width: 40%;
+  }
+  body .mainContainer section .header .headerTop .middle {
+    width: 20%;
+  }
+  body .mainContainer section .header .headerTop .right {
+    width: 40%;
+  }
+}
+@media (min-width: 770px) and (max-width: 1025px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 25px;
+  }
+  body .mainContainer section .header .headerMiddle .content h1 {
+    font-size: 75px;
+    width: 100%;
+  }
+}
+@media (min-width: 1026px) and (max-width: 1399px) {
+  body .mainContainer section .header .headerMiddle .content h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  body .mainContainer section .header .headerTop .left {
+    justify-content: center;
+    width: 33.3%;
+  }
+  body .mainContainer section .header .headerTop .middle {
+    width: 33.3%;
+  }
+  body .mainContainer section .header .headerTop .middle nav {
+    display: none !important;
+  }
+  body .mainContainer section .header .headerTop .right {
+    width: 33.3%;
+  }
+}
+@media (min-width: 1399px) and (max-width: 1864px) {
+  body .mainContainer section .header .headerMiddle .content h1 {
+    width: 100%;
+  }
+}
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 106px;
+  }
+  body .mainContainer section .header .headerBottom .headerBottomArea .yt {
+    width: 96px;
+  }
+  body .mainContainer section .header .headerMiddle .content button {
+    border-radius: 31px;
+    height: 135px;
+    margin: 42px 0 0 0;
+    width: 326px;
+  }
+  body .mainContainer section .header .headerMiddle .content button img {
+    bottom: 5px;
+    margin: 0 0 0 42px;
+    width: 25px;
+  }
+  body .mainContainer section .header .headerTop {
+    height: 212px;
+  }
+  body .mainContainer section .header .headerTop .left h3 span {
+    font-size: 37px;
+  }
+  body .mainContainer section .header .headerTop .left h3 .x {
+    font-size: 43px;
+  }
+  body .mainContainer section .header .headerTop .middle nav ul li {
+    margin: 20.6px;
+  }
+  body .mainContainer section .header .headerTop .right a img {
+    height: auto;
+    width: 62px;
+  }
+}
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 132px;
+  }
+  body .mainContainer section .header .headerBottom .headerBottomArea .yt {
+    width: 120px;
+  }
+  body .mainContainer section .header .headerMiddle .content button {
+    border-radius: 38px;
+    height: 168px;
+    margin: 52px 0 0 0;
+    width: 407px;
+  }
+  body .mainContainer section .header .headerMiddle .content button img {
+    bottom: 6.2px;
+    margin: 0 0 0 52px;
+    width: 31px;
+  }
+  body .mainContainer section .header .headerTop {
+    height: 265px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 span {
+    font-size: 46px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 .x {
+    font-size: 53px;
+  }
+  body .mainContainer section .header .headerTop .middle nav ul li {
+    margin: 26px;
+  }
+  body .mainContainer section .header .headerTop .right a img {
+    height: auto;
+    width: 77px;
+  }
+}
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 165px;
+  }
+  body .mainContainer section .header .headerBottom .headerBottomArea .yt {
+    width: 150px;
+  }
+  body .mainContainer section .header .headerMiddle .content button {
+    border-radius: 47px;
+    height: 210px;
+    margin: 65px 0 0 0;
+    width: 508px;
+  }
+  body .mainContainer section .header .headerMiddle .content button img {
+    bottom: 7.7px;
+    margin: 0 0 0 65px;
+    width: 38px;
+  }
+  body .mainContainer section .header .headerTop {
+    height: 331px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 span {
+    font-size: 57px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 .x {
+    font-size: 65px;
+  }
+  body .mainContainer section .header .headerTop .middle nav ul li {
+    margin: 32px;
+  }
+  body .mainContainer section .header .headerTop .right a img {
+    height: auto;
+    width: 96px;
+  }
+}
+@media (min-width: 3751px) {
+  body .mainContainer section .header .headerBottom {
+    bottom: 206px;
+  }
+  body .mainContainer section .header .headerBottom .headerBottomArea .yt {
+    width: 187px;
+  }
+  body .mainContainer section .header .headerMiddle .content button {
+    border-radius: 58px;
+    height: 262px;
+    margin: 81px 0 0 0;
+    width: 635px;
+  }
+  body .mainContainer section .header .headerMiddle .content button img {
+    bottom: 9.6px;
+    margin: 0 0 0 81px;
+    width: 47px;
+  }
+  body .mainContainer section .header .headerTop {
+    height: 413px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 span {
+    font-size: 71px;
+  }
+  body .mainContainer section .header .headerTop .left a h3 .x {
+    font-size: 81px;
+  }
+  body .mainContainer section .header .headerTop .middle nav ul li {
+    margin: 40px;
+  }
+  body .mainContainer section .header .headerTop .right a img {
+    height: auto;
+    width: 120px;
+  }
+}
+body .mainContainer section .mission {
+  padding: 75px 0 0 0;
+}
+body .mainContainer section .mission .content {
+  align-items: center;
+  display: flex;
+  width: 86%;
+}
+body .mainContainer section .mission .content .left .heading {
+  margin: 39px 0 0 0;
+}
+body .mainContainer section .mission .content .left .heading h1 {
+  color: #ffffff;
+  font-family: mavenProMedium;
+  font-size: 70px;
+  width: 90%;
+}
+body .mainContainer section .mission .content .left .heading h1 span {
+  color: #ff7373;
+}
+body .mainContainer section .mission .content .left .info {
+  background: #414141;
+  border-radius: 8px;
+  display: inline-block;
+  height: 75px;
+  width: 200px;
+}
+body .mainContainer section .mission .content .left .info .infoContainer {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+body .mainContainer section .mission .content .left .info .infoContainer h4 {
+  color: #ff7373;
+}
+body .mainContainer section .mission .content .left .text {
+  margin: 28px 0 0 0;
+  width: 82%;
+}
+body .mainContainer section .mission .content .left .text h1 {
+  font-size: 40px;
+  width: initial;
+}
+body .mainContainer section .mission .content .right .imgArea img {
+  height: auto;
+  width: 842px;
+}
+body .mainContainer section .mission .track {
+  background: #2f2f2f;
+  height: 340px;
+  width: 100%;
+}
+body .mainContainer section .mission .track .block {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body .mainContainer section .mission .track .block .blockContent h1 {
+  color: #ff7373;
+  font-family: mavenProMedium;
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: initial;
+}
+body .mainContainer section .mission .track .block .blockContent .info {
+  color: #ffffff;
+  font-family: mavenProMedium;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: initial;
+}
+body .mainContainer section .mission .track .block .triangleLineContainer {
+  height: 340px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .mainContainer section .mission .track .block .triangleLineContainer .line {
+  background: #ff7373;
+  height: 250px;
+  margin: 50px 0 0 0;
+  width: 1px;
+}
+body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+  border: 50px solid transparent;
+  border-bottom: 75px solid #2f2f2f;
+  border-top: 0;
+  bottom: 75px;
+  height: 0;
+  left: 50px;
+  position: relative;
+  width: 0;
+}
+@media (max-width: 300px) {
+  body .mainContainer section .mission .track {
+    height: initial;
+  }
+  body .mainContainer section .mission .track .block {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+  }
+  body .mainContainer section .mission .track .block .blockContent {
+    width: 100%;
+  }
+  body .mainContainer section .mission .track .block .blockContent h1 {
+    font-size: 53px;
+    text-align: center;
+  }
+  body .mainContainer section .mission .track .block .blockContent .info {
+    font-size: 30px;
+    text-align: center;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    display: none;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    display: none;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    display: none;
+  }
+  body .mainContainer section .mission .track .blockBottom {
+    padding: 25px 0 30px 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 1400px) {
+  body .mainContainer section .mission .track {
+    height: initial;
+  }
+  body .mainContainer section .mission .track .block {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+  }
+  body .mainContainer section .mission .track .block .blockContent {
+    width: 100%;
+  }
+  body .mainContainer section .mission .track .block .blockContent h1 {
+    text-align: center;
+  }
+  body .mainContainer section .mission .track .block .blockContent .info {
+    text-align: center;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    display: none;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    display: none;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    display: none;
+  }
+  body .mainContainer section .mission .track .blockBottom {
+    padding: 25px 0 30px 0;
+  }
+}
+@media (max-width: 325px) {
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text {
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 326px) and (max-width: 450px) {
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text {
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 451px) and (max-width: 575px) {
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 53px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text {
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 1400px) {
+  body .mainContainer section .mission .content .left .heading h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text {
+    width: 100%;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 1400px) {
+  body .mainContainer section .mission .content .right .imgArea {
+    margin: 35px 0 0 0;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1625px) {
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body .mainContainer section .mission {
+    padding: 93px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading {
+    margin: 48px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 87px;
+  }
+  body .mainContainer section .mission .content .left .info {
+    border-radius: 10px;
+    height: 93px;
+    width: 250px;
+  }
+  body .mainContainer section .mission .content .left .text {
+    margin: 35px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 50px;
+  }
+  body .mainContainer section .mission .content .right .imgArea img {
+    width: 1052px;
+  }
+  body .mainContainer section .mission .track {
+    height: 425px;
+  }
+  body .mainContainer section .mission .track .block h1 {
+    font-size: 87px;
+  }
+  body .mainContainer section .mission .track .block .info {
+    font-size: 50px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    height: 425px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    height: 312px;
+    margin: 62px 0 0 0;
+    width: 1.2px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    border: 62px solid transparent;
+    border-bottom: 93px solid #2f2f2f;
+    bottom: 116px;
+    left: 62px;
+  }
+}
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body .mainContainer section .mission {
+    padding: 116px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading {
+    margin: 60px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 108px;
+  }
+  body .mainContainer section .mission .content .left .info {
+    border-radius: 12px;
+    height: 116px;
+    width: 312px;
+  }
+  body .mainContainer section .mission .content .left .text {
+    margin: 43px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 62px;
+  }
+  body .mainContainer section .mission .content .right .imgArea img {
+    width: 1315px;
+  }
+  body .mainContainer section .mission .track {
+    height: 531px;
+  }
+  body .mainContainer section .mission .track .block h1 {
+    font-size: 108px;
+  }
+  body .mainContainer section .mission .track .block .info {
+    font-size: 62px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    height: 531px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    height: 390px;
+    margin: 77px 0 0 0;
+    width: 1.5px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    border: 77px solid transparent;
+    border-bottom: 116px solid #2f2f2f;
+    bottom: 145px;
+    left: 77px;
+  }
+}
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body .mainContainer section .mission {
+    padding: 145px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading {
+    margin: 75px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 135px;
+  }
+  body .mainContainer section .mission .content .left .info {
+    border-radius: 15px;
+    height: 145px;
+    width: 390px;
+  }
+  body .mainContainer section .mission .content .left .text {
+    margin: 53px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 77px;
+  }
+  body .mainContainer section .mission .content .right .imgArea img {
+    width: 1644px;
+  }
+  body .mainContainer section .mission .track {
+    height: 664px;
+  }
+  body .mainContainer section .mission .track .block h1 {
+    font-size: 135px;
+  }
+  body .mainContainer section .mission .track .block .info {
+    font-size: 77px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    height: 664px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    height: 488px;
+    margin: 96px 0 0 0;
+    width: 1.8px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    border: 96px solid transparent;
+    border-bottom: 145px solid #2f2f2f;
+    bottom: 181px;
+    left: 96px;
+  }
+}
+@media (min-width: 3751px) {
+  body .mainContainer section .mission {
+    padding: 181px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading {
+    margin: 93px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .heading h1 {
+    font-size: 169px;
+  }
+  body .mainContainer section .mission .content .left .info {
+    border-radius: 18px;
+    height: 181px;
+    width: 488px;
+  }
+  body .mainContainer section .mission .content .left .text {
+    margin: 66px 0 0 0;
+  }
+  body .mainContainer section .mission .content .left .text h1 {
+    font-size: 96px;
+  }
+  body .mainContainer section .mission .content .right .imgArea img {
+    width: 2055px;
+  }
+  body .mainContainer section .mission .track {
+    height: 830px;
+  }
+  body .mainContainer section .mission .track .block h1 {
+    font-size: 168px;
+  }
+  body .mainContainer section .mission .track .block .info {
+    font-size: 96px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer {
+    height: 830px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .line {
+    height: 610px;
+    margin: 120px 0 0 0;
+    width: 2.2px;
+  }
+  body .mainContainer section .mission .track .block .triangleLineContainer .triangleArea {
+    border: 120px solid transparent;
+    border-bottom: 181px solid #2f2f2f;
+    bottom: 226px;
+    left: 120px;
+  }
+}
+
+.bodyAdd .bodyArea {
+  overflow-y: hidden;
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  a {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 125px;
+  }
+  h3 {
+    font-size: 37px;
+  }
+  h4 {
+    font-size: 31px;
+  }
+}
+@media (min-width: 2401px) and (max-width: 3000px) {
+  a {
+    font-size: 31px;
+  }
+  h1 {
+    font-size: 156px;
+  }
+  h3 {
+    font-size: 46px;
+  }
+  h4 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 3001px) and (max-width: 3750px) {
+  a {
+    font-size: 38px;
+  }
+  h1 {
+    font-size: 195px;
+  }
+  h3 {
+    font-size: 57px;
+  }
+  h4 {
+    font-size: 47px;
+  }
+}
+@media (min-width: 3751px) {
+  a {
+    font-size: 47px;
+  }
+  h1 {
+    font-size: 243px;
+  }
+  h3 {
+    font-size: 71px;
+  }
+  h4 {
+    font-size: 58px;
+  }
+}/*# sourceMappingURL=style.css.map */

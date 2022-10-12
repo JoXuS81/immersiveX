@@ -1,0 +1,275 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+
+
+// FONTS
+// Maven Pro Bold
+@font-face 
+{
+    font-family:"mavenProBold";
+    src:url("../../../Fonts/mavenPro/mavenProBold.ttf");
+}
+
+// Maven Pro Medium
+@font-face 
+{
+    font-family:"mavenProMedium";
+    src:url("../../../Fonts/mavenPro/mavenProMedium.ttf");
+}
+
+
+// MIXINS (8 Mixins)
+@mixin a
+{
+    color:$white;
+    font-size:20px;
+}
+@mixin a_2400
+{
+    font-size:25px;
+}
+@mixin a_3000
+{
+    font-size:31px;
+}
+@mixin a_3750
+{
+    font-size:38px;
+}
+@mixin a_Large
+{
+    font-size:47px;
+}
+@mixin h1
+{
+    color:$digitalExperience;
+    font-family:mavenProBold;
+    font-size:100px;
+    width:55%;
+}
+@mixin h1_2400
+{
+    font-size:125px;
+}
+@mixin h1_3000
+{
+    font-size:156px;
+}
+@mixin h1_3750
+{
+    font-size:195px;
+}
+@mixin h1_Large
+{
+    font-size:243px;
+}
+@mixin h3
+{
+    color:$white;
+    display:inline-block;
+    font-family:mavenProBold;
+    font-size:30px;
+    margin:0;
+    padding:0;
+}
+@mixin h3_2400
+{
+    font-size:37px;
+}
+@mixin h3_3000
+{
+    font-size:46px;
+}
+@mixin h3_3750
+{
+    font-size:57px;
+}
+@mixin h3_Large
+{
+    font-size:71px;
+}
+@mixin h4 
+{
+    display:inline;
+    font-family:mavenProBold;
+    font-size:25px;
+    margin:0;
+}
+@mixin h4_2400
+{
+    font-size:31px;
+}
+@mixin h4_3000
+{
+    font-size:38px;
+}
+@mixin h4_3750
+{
+    font-size:47px;
+}
+@mixin h4_Large
+{
+    font-size:58px;
+}
+
+
+// MIXINS (FOR RESOLUTION 1921 - 2400px)
+// MIXINS (FOR RESOLUTION 2401 - 3000px)
+// MIXINS (FOR RESOLUTION 3001 - 3750px)
+// MIXINS (FOR RESOLUTION 3751 -> ...)
+
+
+// VARIABLES
+$digitalExperience:#dcdcdc;
+$headerButtonHover:#da9a9a;
+$lighterBackground:#2f2f2f;
+$logoDark:#222222;
+$missionInfo:#414141;
+$navbarHover:#505050;
+$red:#ff7373;
+$sectionBackground:#1c1c1c;
+$white:#ffffff;
+
+
+// BODY
+body 
+{
+    overflow-x:hidden;
+
+
+    // INCLUDED MIXINS
+    a
+    {
+        @include a;
+    }
+    h1
+    {
+        @include h1;
+    }
+    h3 
+    {
+        @include h3;
+    }
+    h4
+    {
+        @include h4;
+    }
+
+
+    // MAIN CONTAINER
+    .mainContainer 
+    {
+        // IMPORTS
+        @import "../Content/section";
+    }
+
+
+}
+
+
+.bodyAdd 
+{
+    .bodyArea 
+    {
+        overflow-y:hidden;
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    a
+    {
+        @include a_2400;
+    }
+    h1
+    {
+        @include h1_2400;
+    }
+    h3
+    {
+        @include h3_2400;
+    }
+    h4
+    {
+        @include h4_2400;
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    a
+    {
+        @include a_3000;
+    }
+    h1
+    {
+        @include h1_3000;
+    }
+    h3
+    {
+        @include h3_3000;
+    }
+    h4
+    {
+        @include h4_3000;
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    a
+    {
+        @include a_3750;
+    }
+    h1
+    {
+        @include h1_3750;
+    }
+    h3
+    {
+        @include h3_3750;
+    }
+    h4
+    {
+        @include h4_3750;
+    }
+}
+
+
+@media (min-width:3751px) 
+{
+    a
+    {
+        @include a_Large;
+    }
+    h1
+    {
+        @include h1_Large;
+    }
+    h3
+    {
+        @include h3_Large;
+    }
+    h4
+    {
+        @include h4_Large;
+    }
+}

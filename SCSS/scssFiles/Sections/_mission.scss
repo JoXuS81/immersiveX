@@ -1,0 +1,725 @@
+.mission 
+{
+    padding:75px 0 0 0;
+    .content
+    {
+        align-items:center;
+        display:flex;
+        width:86%;
+        .left 
+        {
+            .heading 
+            {
+                margin:39px 0 0 0;
+                h1 
+                {
+                    color:$white;
+                    font-family:mavenProMedium;
+                    font-size:70px;
+                    width:90%;
+                    span 
+                    {
+                        color:$red;
+                    }
+                }
+            }
+            .info 
+            {
+                background:$missionInfo;
+                border-radius:8px;
+                display:inline-block;
+                height:75px;
+                width:200px;
+                .infoContainer 
+                {
+                    align-items:center;
+                    display:flex;
+                    height:100%;
+                    justify-content:center;
+                    h4 
+                    {
+                        color:$red;
+                    }
+                }
+            }
+            .text 
+            {
+                margin:28px 0 0 0;
+                width:82%;
+                h1 
+                {
+                    font-size:40px;
+                    width:initial;
+                }
+            }
+        }
+        .right 
+        {
+            .imgArea 
+            {
+                img 
+                {
+                    height:auto;
+                    width:842px;
+                }
+            }
+        }
+    }
+    .track 
+    {
+        background:$lighterBackground;
+        height:340px;
+        width:100%;
+        .block
+        {
+            align-items:center;
+            display:flex;
+            justify-content:center;
+            position:relative;
+            .blockContent 
+            {
+                h1 
+                {
+                    color:$red;
+                    font-family:mavenProMedium;
+                    font-size:70px;
+                    margin:0;
+                    padding:0;
+                    text-align:center;
+                    width:initial;
+                }
+                .info 
+                {
+                    color:$white;
+                    font-family:mavenProMedium;
+                    font-size:40px;
+                    margin:0;
+                    padding:0;
+                    text-align:center;
+                    width:initial;
+                }
+            }
+            .triangleLineContainer 
+            {
+                height:340px;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                .line 
+                {
+                    background:$red;
+                    height:250px;
+                    margin:50px 0 0 0;
+                    width:1px;
+                }
+                .triangleArea
+                {
+                    border:50px solid transparent;
+                    border-bottom:75px solid $lighterBackground;
+                    border-top:0;
+                    bottom:75px;
+                    height:0;
+                    left:50px;
+                    position:relative;
+                    width:0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:300px)
+{
+    .mission 
+    {
+        .track 
+        {
+            height:initial;
+            .block 
+            {
+                display:flex;
+                justify-content:center;
+                padding:25px 0 25px 0;
+                .blockContent 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        font-size:53px;
+                        text-align:center;
+                    }
+                    .info 
+                    {
+                        font-size:30px;
+                        text-align:center;
+                    }
+                }
+                .triangleLineContainer 
+                {
+                    display:none;
+                    .line 
+                    {
+                        display:none;
+                    }
+                    .triangleArea 
+                    {
+                        display:none;
+                    }
+                }
+            }
+            .blockBottom 
+            {
+                padding:25px 0 30px 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:300px) and (max-width:1400px)
+{
+    .mission 
+    {
+        .track 
+        {
+            height:initial;
+            .block 
+            {
+                display:flex;
+                justify-content:center;
+                padding:25px 0 25px 0;
+                .blockContent 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        text-align:center;
+                    }
+                    .info 
+                    {
+                        text-align:center;
+                    }
+                }
+                .triangleLineContainer 
+                {
+                    display:none;
+                    .line 
+                    {
+                        display:none;
+                    }
+                    .triangleArea 
+                    {
+                        display:none;
+                    }
+                }
+            }
+            .blockBottom 
+            {
+                padding:25px 0 30px 0;
+            }
+        }
+    }
+}
+
+
+@media (max-width:325px) 
+{
+    .mission 
+    {
+        .content 
+        {
+            .left 
+            {
+                .heading
+                {
+                    h1 
+                    {
+                        font-size:27px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+                .text 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        font-size:18px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:326px) and (max-width:450px) 
+{
+    .mission 
+    {
+        .content 
+        {
+            .left 
+            {
+                .heading
+                {
+                    h1 
+                    {
+                        font-size:40px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+                .text 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        font-size:23px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:451px) and (max-width:575px) 
+{
+    .mission 
+    {
+        .content 
+        {
+            .left 
+            {
+                .heading
+                {
+                    h1 
+                    {
+                        font-size:53px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+                .text 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        font-size:30px;
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:576px) and (max-width:1400px) 
+{
+    .mission 
+    {
+        .content 
+        {
+            .left 
+            {
+                .heading
+                {
+                    h1 
+                    {
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+                .text 
+                {
+                    width:100%;
+                    h1 
+                    {
+                        margin:0;
+                        padding:0;
+                        text-align:center;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1400px)
+{
+    .mission 
+    {
+        .content 
+        {
+            .right 
+            {
+                .imgArea 
+                {
+                    margin:35px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1401px) and (max-width:1625px)
+{
+    .mission 
+    {
+        .content 
+        {
+            .left 
+            {
+                .text 
+                {
+                    h1 
+                    {
+                        font-size:30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .mission 
+    {
+        padding:93px 0 0 0;
+        .content
+        {
+            .left 
+            {
+                .heading 
+                {
+                    margin:48px 0 0 0;
+                    h1 
+                    {
+                        font-size:87px;
+                    }
+                }
+                .info 
+                {
+                    border-radius:10px;
+                    height:93px;
+                    width:250px;
+                }
+                .text 
+                {
+                    margin:35px 0 0 0;
+                    h1 
+                    {
+                        font-size:50px;
+                    }
+                }
+            }
+            .right 
+            {
+                .imgArea 
+                {
+                    img 
+                    {
+                        width:1052px;
+                    }
+                }
+            }
+        }
+        .track 
+        {
+            height:425px;
+            .block
+            {
+                h1 
+                {
+                    font-size:87px;
+                }
+                .info 
+                {
+                    font-size:50px;
+                }
+                .triangleLineContainer 
+                {
+                    height:425px;
+                    .line 
+                    {
+                        height:312px;
+                        margin:62px 0 0 0;
+                        width:1.2px;
+                    }
+                    .triangleArea
+                    {
+                        border:62px solid transparent;
+                        border-bottom:93px solid $lighterBackground;
+                        bottom:116px;
+                        left:62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .mission 
+    {
+        padding:116px 0 0 0;
+        .content
+        {
+            .left 
+            {
+                .heading 
+                {
+                    margin:60px 0 0 0;
+                    h1 
+                    {
+                        font-size:108px;
+                    }
+                }
+                .info 
+                {
+                    border-radius:12px;
+                    height:116px;
+                    width:312px;
+                }
+                .text 
+                {
+                    margin:43px 0 0 0;
+                    h1 
+                    {
+                        font-size:62px;
+                    }
+                }
+            }
+            .right 
+            {
+                .imgArea 
+                {
+                    img 
+                    {
+                        width:1315px;
+                    }
+                }
+            }
+        }
+        .track 
+        {
+            height:531px;
+            .block
+            {
+                h1 
+                {
+                    font-size:108px;
+                }
+                .info 
+                {
+                    font-size:62px;
+                }
+                .triangleLineContainer 
+                {
+                    height:531px;
+                    .line 
+                    {
+                        height:390px;
+                        margin:77px 0 0 0;
+                        width:1.5px;
+                    }
+                    .triangleArea
+                    {
+                        border:77px solid transparent;
+                        border-bottom:116px solid $lighterBackground;
+                        bottom:145px;
+                        left:77px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .mission 
+    {
+        padding:145px 0 0 0;
+        .content
+        {
+            .left 
+            {
+                .heading 
+                {
+                    margin:75px 0 0 0;
+                    h1 
+                    {
+                        font-size:135px;
+                    }
+                }
+                .info 
+                {
+                    border-radius:15px;
+                    height:145px;
+                    width:390px;
+                }
+                .text 
+                {
+                    margin:53px 0 0 0;
+                    h1 
+                    {
+                        font-size:77px;
+                    }
+                }
+            }
+            .right 
+            {
+                .imgArea 
+                {
+                    img 
+                    {
+                        width:1644px;
+                    }
+                }
+            }
+        }
+        .track 
+        {
+            height:664px;
+            .block
+            {
+                h1 
+                {
+                    font-size:135px;
+                }
+                .info 
+                {
+                    font-size:77px;
+                }
+                .triangleLineContainer 
+                {
+                    height:664px;
+                    .line 
+                    {
+                        height:488px;
+                        margin:96px 0 0 0;
+                        width:1.8px;
+                    }
+                    .triangleArea
+                    {
+                        border:96px solid transparent;
+                        border-bottom:145px solid $lighterBackground;
+                        bottom:181px;
+                        left:96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .mission 
+    {
+        padding:181px 0 0 0;
+        .content
+        {
+            .left 
+            {
+                .heading 
+                {
+                    margin:93px 0 0 0;
+                    h1 
+                    {
+                        font-size:169px;
+                    }
+                }
+                .info 
+                {
+                    border-radius:18px;
+                    height:181px;
+                    width:488px;
+                }
+                .text 
+                {
+                    margin:66px 0 0 0;
+                    h1 
+                    {
+                        font-size:96px;
+                    }
+                }
+            }
+            .right 
+            {
+                .imgArea 
+                {
+                    img 
+                    {
+                        width:2055px;
+                    }
+                }
+            }
+        }
+        .track 
+        {
+            height:830px;
+            .block
+            {
+                h1 
+                {
+                    font-size:168px;
+                }
+                .info 
+                {
+                    font-size:96px;
+                }
+                .triangleLineContainer 
+                {
+                    height:830px;
+                    .line 
+                    {
+                        height:610px;
+                        margin:120px 0 0 0;
+                        width:2.2px;
+                    }
+                    .triangleArea
+                    {
+                        border:120px solid transparent;
+                        border-bottom:181px solid $lighterBackground;
+                        bottom:226px;
+                        left:120px;
+                    }
+                }
+            }
+        }
+    }
+}
